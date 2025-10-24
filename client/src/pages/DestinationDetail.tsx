@@ -39,6 +39,10 @@ export default function DestinationDetail() {
 
       <article className="py-20">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
+          {/* Aesthetic transparent "glass" container for blog content.
+              Uses a semi-transparent background with backdrop blur so the
+              hero image / page background can subtly show through. */}
+          <div className="bg-white/30 dark:bg-slate-900/30 backdrop-blur-md rounded-2xl p-8 sm:p-12 shadow-lg">
           <Link href="/destinations">
             <Button variant="ghost" className="mb-8 -ml-4" data-testid="button-back">
               <ArrowLeft className="w-4 h-4 mr-2" />
@@ -159,6 +163,7 @@ export default function DestinationDetail() {
               })()}
             </div>
           </section>
+          </div>
         </div>
       </article>
 

@@ -5,7 +5,7 @@ import { destinations } from '@/data/destinations';
 import { Card } from '@/components/ui/card';
 import { Coffee } from 'lucide-react';
 import { Link } from 'wouter';
-import coffeeHeroImage from '@assets/generated_images/Vienna_coffeehouse_hero_image_f626bfe2.png';
+import coffeeHeroImage from '@assets/generated_images/a1.avif';
 
 export default function CoffeeCulture() {
   const coffeeDestinations = destinations.filter(d => d.coffeeCulture);

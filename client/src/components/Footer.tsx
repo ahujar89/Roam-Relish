@@ -43,7 +43,7 @@ export default function Footer() {
             <h4 className="font-medium mb-4 uppercase tracking-wide text-sm">Connect</h4>
             <div className="flex gap-4">
               <a
-                href="#"
+                href="https://www.instagram.com/ahuja.saniya/"
                 className="hover-elevate active-elevate-2 p-2 rounded-md border border-border transition-all duration-300"
                 aria-label="Instagram"
                 data-testid="link-instagram"
