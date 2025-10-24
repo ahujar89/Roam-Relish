@@ -23,7 +23,7 @@ export default function CoffeeCulture() {
 
       <section className="py-20 px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
-          <div className="mb-16">
+          <div className="mb-16 bg-pattern-subtle p-8 rounded-lg">
             <div className="flex items-center gap-3 mb-6">
               <Coffee className="w-8 h-8 text-primary" />
               <span className="text-sm uppercase tracking-wide text-muted-foreground">
@@ -45,7 +45,7 @@ export default function CoffeeCulture() {
           <div className="space-y-12">
             {coffeeDestinations.map((destination) => (
               <Link key={destination.id} href={`/destination/${destination.id}`} data-testid={`link-coffee-${destination.id}`}>
-                <Card className="overflow-hidden hover-elevate cursor-pointer">
+                <Card className="overflow-hidden hover-elevate cursor-pointer smooth-hover">
                   <div className="md:flex">
                     <div className="md:w-2/5">
                       <img

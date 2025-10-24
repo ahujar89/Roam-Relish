@@ -13,12 +13,12 @@ interface DestinationCardProps {
 export default function DestinationCard({ id, name, country, image, excerpt }: DestinationCardProps) {
   return (
     <Link href={`/destination/${id}`} data-testid={`link-destination-${id}`}>
-      <Card className="overflow-hidden hover-elevate group cursor-pointer border">
+      <Card className="overflow-hidden hover-elevate group cursor-pointer border smooth-hover">
         <div className="relative h-64 overflow-hidden">
           <img
             src={image}
             alt={`${name}, ${country}`}
-            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
           <div className="absolute bottom-0 left-0 right-0 p-6">

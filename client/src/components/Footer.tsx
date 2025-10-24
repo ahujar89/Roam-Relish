@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div>
-            <h3 className="font-serif text-2xl mb-4">Saniya's Wanderlust</h3>
+            <h3 className="font-serif text-2xl mb-4">Roam & Relish</h3>
             <p className="text-muted-foreground leading-relaxed">
               Exploring the world's cultures, one destination at a time. Join me on a journey through coffee shops, ancient streets, and hidden gems across the globe.
             </p>
@@ -44,42 +44,42 @@ export default function Footer() {
             <div className="flex gap-4">
               <a
                 href="#"
-                className="hover-elevate p-2 rounded-md border border-border"
+                className="hover-elevate active-elevate-2 p-2 rounded-md border border-border transition-all duration-300"
                 aria-label="Instagram"
                 data-testid="link-instagram"
               >
-                <Instagram className="w-5 h-5" />
+                <Instagram className="w-5 h-5 transition-transform duration-300 hover:scale-110" />
               </a>
               <a
                 href="#"
-                className="hover-elevate p-2 rounded-md border border-border"
+                className="hover-elevate active-elevate-2 p-2 rounded-md border border-border transition-all duration-300"
                 aria-label="Pinterest"
                 data-testid="link-pinterest"
               >
-                <SiPinterest className="w-5 h-5" />
+                <SiPinterest className="w-5 h-5 transition-transform duration-300 hover:scale-110" />
               </a>
               <a
                 href="#"
-                className="hover-elevate p-2 rounded-md border border-border"
+                className="hover-elevate active-elevate-2 p-2 rounded-md border border-border transition-all duration-300"
                 aria-label="Facebook"
                 data-testid="link-facebook"
               >
-                <Facebook className="w-5 h-5" />
+                <Facebook className="w-5 h-5 transition-transform duration-300 hover:scale-110" />
               </a>
               <a
                 href="#"
-                className="hover-elevate p-2 rounded-md border border-border"
+                className="hover-elevate active-elevate-2 p-2 rounded-md border border-border transition-all duration-300"
                 aria-label="Email"
                 data-testid="link-email"
               >
-                <Mail className="w-5 h-5" />
+                <Mail className="w-5 h-5 transition-transform duration-300 hover:scale-110" />
               </a>
             </div>
           </div>
         </div>
 
         <div className="mt-12 pt-8 border-t border-border text-center text-sm text-muted-foreground">
-          <p>© 2025 Saniya's Wanderlust. All rights reserved.</p>
+          <p>© 2025 Roam & Relish. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -17,12 +17,12 @@ export default function Home() {
       <Navigation />
       <Hero
         image={heroImage}
-        title="Saniya's Wanderlust"
-        subtitle="Exploring Culture, One City at a Time"
+        title="Roam & Relish"
+        subtitle="Slow Travel, Deep Connections, Rich Experiences"
       />
 
       {/* Featured Destinations */}
-      <section className="py-20 px-6 lg:px-8">
+      <section className="py-20 px-6 lg:px-8 bg-pattern-subtle">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="font-serif text-4xl md:text-5xl mb-4" data-testid="text-featured-destinations">

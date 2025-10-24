@@ -2,6 +2,7 @@ import { Link, useLocation } from 'wouter';
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import logo from '@assets/generated_images/Roam_&_Relish_logo_e9fcfeb3.png';
 
 export default function Navigation() {
   const [location] = useLocation();
@@ -14,37 +15,40 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link href="/" data-testid="link-home">
-            <span className="font-serif text-2xl text-foreground">
-              Saniya's Wanderlust
-            </span>
+            <div className="flex items-center gap-3">
+              <img src={logo} alt="Roam & Relish" className="h-8" />
+              <span className="font-serif text-2xl text-foreground hidden sm:inline">
+                Roam & Relish
+              </span>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             <Link href="/" data-testid="link-nav-home">
-              <span className={`text-sm tracking-wide uppercase transition-colors ${
-                isActive('/') ? 'text-foreground' : 'text-muted-foreground hover:text-foreground'
+              <span className={`text-sm tracking-wide uppercase link-hover ${
+                isActive('/') ? 'text-foreground' : 'text-muted-foreground'
               }`}>
                 Home
               </span>
             </Link>
             <Link href="/destinations" data-testid="link-nav-destinations">
-              <span className={`text-sm tracking-wide uppercase transition-colors ${
-                isActive('/destinations') ? 'text-foreground' : 'text-muted-foreground hover:text-foreground'
+              <span className={`text-sm tracking-wide uppercase link-hover ${
+                isActive('/destinations') ? 'text-foreground' : 'text-muted-foreground'
               }`}>
                 Destinations
               </span>
             </Link>
             <Link href="/coffee-culture" data-testid="link-nav-coffee">
-              <span className={`text-sm tracking-wide uppercase transition-colors ${
-                isActive('/coffee-culture') ? 'text-foreground' : 'text-muted-foreground hover:text-foreground'
+              <span className={`text-sm tracking-wide uppercase link-hover ${
+                isActive('/coffee-culture') ? 'text-foreground' : 'text-muted-foreground'
               }`}>
                 Coffee Culture
               </span>
             </Link>
             <Link href="/about" data-testid="link-nav-about">
-              <span className={`text-sm tracking-wide uppercase transition-colors ${
-                isActive('/about') ? 'text-foreground' : 'text-muted-foreground hover:text-foreground'
+              <span className={`text-sm tracking-wide uppercase link-hover ${
+                isActive('/about') ? 'text-foreground' : 'text-muted-foreground'
               }`}>
                 About
               </span>

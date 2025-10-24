@@ -348,4 +348,49 @@
   .border.hover-elevate:not(.no-hover-interaction-elevate)::after {
     inset: -1px;
   }
+
+  /* Smooth hover animations */
+  .smooth-hover {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .smooth-hover:hover {
+    transform: translateY(-4px);
+  }
+
+  .link-hover {
+    position: relative;
+    transition: color 0.3s ease;
+  }
+
+  .link-hover::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: currentColor;
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .link-hover:hover::after {
+    width: 100%;
+  }
+
+  /* Decorative background patterns */
+  .bg-pattern-dots {
+    background-image: radial-gradient(circle, hsl(var(--muted)) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
+  .bg-pattern-subtle {
+    background-image: 
+      linear-gradient(30deg, hsl(var(--accent) / 0.03) 12%, transparent 12.5%, transparent 87%, hsl(var(--accent) / 0.03) 87.5%, hsl(var(--accent) / 0.03)),
+      linear-gradient(150deg, hsl(var(--accent) / 0.03) 12%, transparent 12.5%, transparent 87%, hsl(var(--accent) / 0.03) 87.5%, hsl(var(--accent) / 0.03)),
+      linear-gradient(30deg, hsl(var(--accent) / 0.03) 12%, transparent 12.5%, transparent 87%, hsl(var(--accent) / 0.03) 87.5%, hsl(var(--accent) / 0.03)),
+      linear-gradient(150deg, hsl(var(--accent) / 0.03) 12%, transparent 12.5%, transparent 87%, hsl(var(--accent) / 0.03) 87.5%, hsl(var(--accent) / 0.03));
+    background-size: 80px 140px;
+    background-position: 0 0, 0 0, 40px 70px, 40px 70px;
+  }
 }
